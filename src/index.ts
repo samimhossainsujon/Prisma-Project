@@ -5,14 +5,16 @@ const prisma = new PrismaClient();
 const main = async () => {
     // const result = await prisma.post.create({
     //     data: {
-    //         title: "this is title",
-    //         content: "this is content",
-    //         authorName: 'samim hossain sujon',
-            
+    //         title: "This is title 2!",
+    //         content: "This is content...2",
+    //         authorName: "Fahim Ahammed Firoz"
     //     }
-    // })
+    // });
 
-    const getAlldb = await prisma.post.findMany()
-    console.log(getAlldb)
-};
+    //console.log(result);
+
+    const getAllFromDB = await prisma.post.findMany();
+    console.log(getAllFromDB)
+}
+
 main();
