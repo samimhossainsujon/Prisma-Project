@@ -1,4 +1,4 @@
-import { PrismaClient } from "@prisma/client";
+ import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
@@ -49,7 +49,7 @@ const filtering = async () => {
     const startsWith = await prisma.user.findMany({
         where: {
             email: {
-                startsWith: 'user1@ph.com' // endsWith, contains, equals
+                startsWith: 'user1@ph.com' // endsWith, contains,  
             }
         }
     });
